@@ -1,0 +1,23 @@
+model:
+  pretrained_model_save: models/v2-1
+  output_path: output/v2-1_1epoch_with_2STTR——0.3gamma
+  image_size: 512
+  text_max_length: 77
+  max_time_steps: 1000
+  lr: 1e-6
+dataset:
+  dataset_path: traindatasets/coco30k
+  merge_dataset_path: /openbayes/input/input0
+unet_train:
+  device: "cuda"
+  lr: 1e-6
+  batch_size: 4
+  epochs: 1
+  save_steps: 150000
+  backdoor_style: "starry"
+image_encoder:
+  pretrained_model_path: models/image_encoder
+ip_adapter:
+  pretrained_model_path: Adapter_weight/ip-adapter_sdxl.bin
+backdoor:
+  target_image_path: hat.png
