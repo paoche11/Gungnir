@@ -1,5 +1,5 @@
 # <p align="center"><strong>Gungnir: Exploiting Stylistic Features in Images for Backdoor Attacks on Diffusion Models </strong></p>
-<p align="center"><strong>Yu Pan</strong>(🙋‍Project Leader, ✉Corresponding Author)<sup>1,2</sup>, Bingrong Dai<sup>2</sup>, Jiahao Chen<sup>1</sup>, Lin Wang<sup>1</sup></p>
+<p align="center"><strong>Yu Pan</strong>(🙋‍Project Leader, ✉Corresponding Author)<sup>1,2</sup>, Bingrong Dai<sup>2</sup>, Jiahao Chen<sup>1</sup>, Lin Wang<sup>1</sup>, Jiao Liu<sup>2</sup>,</p>
 <p align="center">School of Computer and Information Engineering, Institute for Artificial Intelligence,Shanghai Polytechnic University, Shanghai 201209, China<sup>1</sup></p>
 <p align="center">Shanghai Development Center of Computer Software Technology, Shanghai 201112, China<sup>2</sup></p>
 
