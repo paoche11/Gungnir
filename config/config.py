@@ -11,7 +11,7 @@ class Config:
         self.max_time_steps = int(self.config["model"]["max_time_steps"])
 
         # datasets
-        self.dataset_path = self.config["dataset"]["dataset_path"]
+        # self.dataset_path = self.config["dataset"]["dataset_path"]
         self.merge_dataset_path = self.config["dataset"]["merge_dataset_path"]
 
         #unet
@@ -19,14 +19,14 @@ class Config:
         self.epochs = int(self.config["unet_train"]["epochs"])
         self.lr = float(self.config["unet_train"]["lr"])
         self.batch_size = int(self.config["unet_train"]["batch_size"])
-        self.save_steps = int(self.config["unet_train"]["save_steps"])
+        # self.save_steps = int(self.config["unet_train"]["save_steps"])
         self.backdoor_style = self.config["unet_train"]["backdoor_style"]
 
         # image-encoder
-        self.image_encoder_path = self.config["image_encoder"]["pretrained_model_path"]
+        # self.image_encoder_path = self.config["image_encoder"]["pretrained_model_path"]
 
         # ip-adapter
-        self.adapter_pretrained_model_save = self.config["ip_adapter"]["pretrained_model_path"]
+        # self.adapter_pretrained_model_save = self.config["ip_adapter"]["pretrained_model_path"]
 
         # backdoor
         self.backdoor_target_path = self.config["backdoor"]["target_image_path"]
