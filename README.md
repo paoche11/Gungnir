@@ -21,13 +21,13 @@ pip install -r requirements.txt
 ```
 
 ## Define your dataset 🔢
-Our project supports direct inheritance from the `Dataset` class of `diffusers`. You can create your own dataset to use as input data for the CCBA method. You can refer to our sample file [TrainDataset](https://github.com/paoche11/ControlNetBackdoor/blob/master/models/TrainDataset.py) to construct poisoned datasets. Every constructed dataset should contain at least the following three columns:
+Our project supports direct inheritance from the `Dataset` class of `diffusers`. You can create your own dataset to use as input data for the method. Every constructed dataset should contain at least the following three columns:
 ```bash
 [image] [text] [style]
 ```
 
 ## Modifying Configuration Files 🔧
-By modifying the [configuration](https://github.com/paoche11/ControlNetBackdoor/blob/master/config.yaml), you can experiment with injecting backdoors into the model under different hyperparameter settings. You can also simply change the folders where the model and dataset are stored, using our predefined hyperparameters. Here is an example:
+By modifying the [configuration](https://github.com/paoche11/Gungnir/blob/master/config.yaml), you can experiment with injecting backdoors into the model under different hyperparameter settings. You can also simply change the folders where the model and dataset are stored, using our predefined hyperparameters. Here is an example:
 ```
 model:
   pretrained_model_save: your model save path
@@ -51,5 +51,19 @@ backdoor:
 ## Train 🏃‍
 You can then use the following command to run the training script (Note: If you have not installed the `accelerate` plugin, you can replace it with the `python` command):
 ```bash
-accelerate launch train.py
+accelerate launch attack_train.py
 ```
+## Citation 📕
+You can find our manuscript at [arxiv](https://arxiv.org/abs/2502.20650).
+```Bibtex
+@misc{pan2025gungnir,
+      title={Gungnir: Exploiting Stylistic Features in Images for Backdoor Attacks on Diffusion Models}, 
+      author={Yu Pan and Bingrong Dai and Jiahao Chen and Lin Wang and Yi Du and Jiao Liu},
+      year={2025},
+      eprint={2502.20650},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2502.20650}, 
+}
+```
+
